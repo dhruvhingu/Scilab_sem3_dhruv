@@ -1,0 +1,20 @@
+//ADSR signal quiz ques2 Dhruv
+t1=0:0.01:0.1;
+n1=length(t1);
+x1=linspace(0,1,n1);
+t2=0.101:0.001:0.2;
+n2=length(t2);
+x2=linspace(1,0.9,n2);
+t3=0.201:0.001:0.8;
+n3=length(t3);
+x3=linspace(0.9,0.8,n3);
+t4=0.801:0.001:1;
+n4=length(t4);
+x4=linspace(0.8,0,n4);
+t=[t1 t2 t3 t4];
+x=[x1 x2 x3 x4];
+plot(t,x);
+xgrid(5);
+xlabel("Time","Fontsize",4);
+ylabel("X","Fonstsize",4);
+title("ADSR Signal","Fontsize",8);
